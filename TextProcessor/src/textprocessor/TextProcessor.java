@@ -53,7 +53,7 @@ public class TextProcessor {
         s = new Scanner(new BufferedReader(new FileReader(filename)));
         while (s.hasNext()) {
             String next = s.next();
-            String[] Res = next.split("[\\p{Punct}\\s^((\r\n)|(\n))]+");
+            String[] Res = next.split("[\\p{Punct}\\s]+");
             if(ignore){ prefix = prefix.toLowerCase();}
             for (String word:Res){
                 if(ignore){ word = word.toLowerCase();}
