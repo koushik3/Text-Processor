@@ -13,12 +13,6 @@ import java.util.logging.Logger;
  */
 public class TextProcessorTest {
     public static void main(String[] args) {
-        TextProcessor tprocessor = new TextProcessor();
-        try {
-            tprocessor.wordCounter("alice30.txt");
-        } catch (IOException ex) {
-            Logger.getLogger(TextProcessorTest.class.getName()).log(Level.SEVERE, null, ex);
-        }
         if (args.length > 0) {
             String filename = null;
             String prefix = null;
@@ -44,27 +38,19 @@ public class TextProcessorTest {
                         break;
                 }
             }
-            //TextProcessor tprocessor = new TextProcessor();
-            try {
-                tprocessor.wordCounter("alice30.txt");
-            } catch (IOException ex) {
-                Logger.getLogger(TextProcessorTest.class.getName()).log(Level.SEVERE, null, ex);
-            }
-            
-                try{
-                    if(filename!=null){
-                        if(prefix!=null){
-                            tprocessor.prefixCounter(filename,prefix,ignore);	
-                        }else{
-                            tprocessor.wordCounter(filename);
-                            System.out.print("hi");
-                            }
+            TextProcessor tprocessor = new TextProcessor();
+            try{
+                if(filename!=null){
+                    if(prefix!=null){
+                        tprocessor.prefixCounter(filename,prefix,ignore);	
+                    }else{
+                        tprocessor.wordCounter(filename);
+                        }
     			}
-                    }
-                catch(IOException e){
-                    System.out.println("IOEXception!!");
-                }
-    	
-        }
+            }
+            catch(IOException e){
+                System.out.println("IOEXception!!");
+            }
+    	 }
     }
 }
