@@ -1,7 +1,7 @@
 Text Processor contains code for PHASE-I and PHASE-II written in JAVA,    
 whereas PHASE-III is written in Python using TCP server.  
-#Overview  
-##PHASE-I,II:  
+# Overview #    
+## PHASE-I,II: ##    
   **a)Features:**  
   1)Count the frequencies of all words in a text file and store them in a new file.  
   2)Output all words which appear in the input file starting with a given prefix with their word counts.    
@@ -15,10 +15,10 @@ whereas PHASE-III is written in Python using TCP server.
    -p prefix The word with which the prefix words are to be calculated, default is null.  
    -i        Ignore case when searching for words, by default the search is case-sensitive.  
      
-   		**Examples:**  
+   		 Examples:  
      	-f input.txt -> to compute the occurrences of all words in input.txt file.  
      	-f input.txt -p cold -i -> to compute all words and their frequencies whose prefix is cold, ignoring Case.  
-##PHASE-III:  
+## PHASE-III: ##    
     In PHASE_III,a client will connect to it over some part where you can issue a command  
       a. count filename word,  
 and the Server will respond with the answer. 
