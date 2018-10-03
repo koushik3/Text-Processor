@@ -1,7 +1,7 @@
 Text Processor contains code for PHASE-I and PHASE-II written in JAVA,    
 whereas PHASE-III is written in Python using TCP server.  
 # Overview #    
-## PHASE-I,II: ##    
+## PHASES-I,II: ##    
   **a)Features:**  
   1)Count the frequencies of all words in a text file and store them in a new file.  
   2)Output all words which appear in the input file starting with a given prefix with their word counts.    
