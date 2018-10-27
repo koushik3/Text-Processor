@@ -3,7 +3,7 @@ whereas PHASE-III is written in Python using TCP server.
 # Overview #    
 ## PHASES-I,II: ##    
   **a)Features:**  
-  1)Count the frequencies of all words in a text file and store them in a new file.  
+  1)Count the frequencies of all the words in a text file and store them in a new file.  
   2)Output all words which appear in the input file starting with a given prefix with their word counts.    
   3)Has an option of ignoring case while computing 2.  
   **b)Command Line Interface:**  
