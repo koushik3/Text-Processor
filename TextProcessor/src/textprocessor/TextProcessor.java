@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package textprocessor;
 import java.util.Scanner;
 import java.io.*;
@@ -31,9 +26,9 @@ public class TextProcessor {
                     }
             }
         }
-        if(s != null) {
-            s.close();
-        }
+//         if(s != null) {
+//             s.close();
+//         }
         BufferedWriter bw = new BufferedWriter(new FileWriter("output.txt"));
         for(Map.Entry<String, Integer> entry : countByWords.entrySet()){    
             String word=entry.getKey();  
@@ -42,8 +37,8 @@ public class TextProcessor {
             bw.write(word+" , "+count);
             bw.newLine();
         }
-        if (bw != null)
-            bw.close();
+//         if (bw != null)
+//             bw.close();
         
     }
     
@@ -67,8 +62,8 @@ public class TextProcessor {
                 }
             }
         }
-        if(s != null)
-            s.close();
+//         if(s != null)
+//             s.close();
         
         for(Map.Entry<String, Integer> entry : countByWords.entrySet()){    
             String word=entry.getKey();  
