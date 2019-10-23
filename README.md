@@ -1,4 +1,4 @@
-Text Processor contains code for PHASE-I and PHASE-II written in JAVA,    
+Text Processor contains code for PHASE-I and PHASE-II written in the JAVA;
 whereas PHASE-III is written in Python using TCP server.  
 # Overview #    
 ## PHASES-I,II: ##    
@@ -22,4 +22,5 @@ whereas PHASE-III is written in Python using TCP server.
     In PHASE_III,a client will connect to it over some part where you can issue a command  
       a. count filename word,  
 and the Server will respond with the answer. 
+Nice Readme file
      
